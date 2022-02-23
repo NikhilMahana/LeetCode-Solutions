@@ -6,7 +6,7 @@ class Solution {
             res = res * 10 + x % 10;
             if (res > Integer.MAX_VALUE || res < Integer.MIN_VALUE)
                 return 0;
-            x /= 10;
+            x = x/10;
         }
         return (int) res;
     }
